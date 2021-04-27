@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -46,18 +46,21 @@ html {
   font-family: 'Poppins', sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
 body {
   background-color: #E1E2E7;
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+header {
+  width: 88%;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
 
 main {
@@ -104,6 +107,7 @@ button {
   border: none;
   background: white;
   padding: 1rem;
+  cursor: pointer;
 }
 
 button[type="submit"] {

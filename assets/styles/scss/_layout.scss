@@ -1,3 +1,7 @@
+header {
+    @include wide-container;
+    padding: 2rem 0;
+}
 main {
     @include wide-container;
     .input-container {
