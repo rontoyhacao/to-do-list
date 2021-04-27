@@ -70,6 +70,14 @@ main .input-container {
   bottom: 0;
   left: 0;
   padding: 1rem;
+  width: 100%;
+}
+
+main .input-container__upper button {
+  width: 100%;
+}
+
+main .input-container__lower {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,7 +87,6 @@ main .input-container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
 }
 
 input {
@@ -92,14 +99,32 @@ input {
 }
 
 button {
-  border-radius: 50%;
-  border: none;
   -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
           box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  border: none;
+  background: white;
+  padding: 1rem;
+}
+
+button[type="submit"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
   height: 3rem;
   width: 3rem;
   margin-left: 1rem;
-  background: white;
+}
+
+.completed-btn {
+  border-radius: 2rem;
+  margin-bottom: 1rem;
 }
 
 ul li {

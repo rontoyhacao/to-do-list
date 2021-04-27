@@ -6,13 +6,23 @@ input {
     width: 100%;
 }
 button {
-    border-radius: 50%;
-    border: none;
     @include shadow;
+    border: none;
+    background: white;
+    padding: 1rem;
+}
+button[type="submit"] {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
     height: 3rem;
     width: 3rem;
     margin-left: 1rem;
-    background: white;
+}
+.completed-btn {
+    border-radius: 2rem;
+    margin-bottom: 1rem;
 }
 
 ul li {
