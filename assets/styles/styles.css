@@ -1,0 +1,113 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input,
+button {
+  outline: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #E1E2E7;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main {
+  width: 88%;
+  margin: 0 auto;
+}
+
+main .input-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+input {
+  padding: 1rem;
+  border: none;
+  border-radius: 2rem;
+  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+button {
+  border-radius: 50%;
+  border: none;
+  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  height: 3rem;
+  width: 3rem;
+  margin-left: 1rem;
+  background: white;
+}
+
+ul li {
+  background: white;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+}
+/*# sourceMappingURL=styles.css.map */

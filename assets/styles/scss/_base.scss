@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+// variables
+$base: #E1E2E7;
+
+// mixins
+@mixin wide-container {
+    width: 88%;
+    margin: 0 auto;
+}
+@mixin shadow {
+    box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+}
+
+// reset
+* {
+    box-sizing: border-box;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+input,
+button {
+    outline: none;
+}
+
+// typography
+html {
+    font-size: 14px;
+}
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: $base;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

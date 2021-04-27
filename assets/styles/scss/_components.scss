@@ -1,0 +1,24 @@
+input {
+    padding: 1rem;
+    border: none;
+    border-radius: 2rem;
+    @include shadow;
+    width: 100%;
+}
+button {
+    border-radius: 50%;
+    border: none;
+    @include shadow;
+    height: 3rem;
+    width: 3rem;
+    margin-left: 1rem;
+    background: white;
+}
+
+ul li {
+    background: white;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    @include shadow;
+}
