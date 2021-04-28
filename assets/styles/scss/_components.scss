@@ -30,6 +30,9 @@ button {
 }
 .delete-btn {
     color: $Light-Red;
+    .fa-times {
+        pointer-events: none;
+    }
 }
 
 ul li {
@@ -41,6 +44,7 @@ ul li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: all .3s;
     .container {
         position: relative;
         padding-left: 2rem;
@@ -80,4 +84,12 @@ ul li {
     .container input:checked ~ .checkmark::after {
         display: block;
     }
+}
+
+.completed {
+    text-decoration: line-through;
+}
+.exit-anim {
+    transform: translateX(-100%);
+    opacity: 0;
 }

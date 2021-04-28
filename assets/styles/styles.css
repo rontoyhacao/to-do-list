@@ -153,6 +153,10 @@ button {
   color: #ff5263;
 }
 
+.delete-btn .fa-times {
+  pointer-events: none;
+}
+
 ul li {
   background: white;
   margin-bottom: 1rem;
@@ -169,6 +173,8 @@ ul li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
 }
 
 ul li .container {
@@ -216,5 +222,15 @@ ul li .container .checkmark::after {
 
 ul li .container input:checked ~ .checkmark::after {
   display: block;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.exit-anim {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  opacity: 0;
 }
 /*# sourceMappingURL=styles.css.map */
