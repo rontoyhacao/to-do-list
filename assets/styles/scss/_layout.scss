@@ -10,6 +10,8 @@ main {
         left: 0;
         padding: 1rem;
         width: 100%;
+        z-index: 1;
+        // background: $base;
         &__upper {
             button {
                 width: 100%;
@@ -21,5 +23,9 @@ main {
             justify-content: space-between;
             position: relative;
         }
+    }
+    .main-container {
+        height: calc(100vh - 17.85rem);
+        overflow-y: scroll;
     }
 }
