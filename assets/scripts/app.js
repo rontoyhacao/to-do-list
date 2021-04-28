@@ -11,7 +11,7 @@ function addTask(e) {
     const newTask = document.createElement('li');
     const newTaskLabel = document.createElement('label');
     newTaskLabel.classList.add('container');
-    newTaskLabel.innerText = 'wew';
+    newTaskLabel.innerText = taskInput.value;
     newTask.appendChild(newTaskLabel);
 
     // add task: create checkbox
@@ -28,5 +28,9 @@ function addTask(e) {
     deleteTask.innerHTML = '<i class="fas fa-times"></i>';
     newTask.appendChild(deleteTask);
 
+    // append to task list
     taskList.appendChild(newTask);
+
+    // clear input field
+    taskInput.value = '';
 }
