@@ -90,20 +90,21 @@ main .input-container__lower {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: relative;
 }
 
 input {
   padding: 1rem;
   border: none;
   border-radius: 2rem;
-  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
   width: 100%;
 }
 
 button {
-  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
   border: none;
   background: white;
   padding: 1rem;
@@ -121,9 +122,11 @@ button[type="submit"] {
       -ms-flex-pack: center;
           justify-content: center;
   border-radius: 50%;
-  height: 3.5rem;
-  width: 3.5rem;
-  margin-left: 1rem;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  right: .25rem;
+  background: #E1E2E7;
 }
 
 .completed-btn {
@@ -136,7 +139,7 @@ ul li {
   margin-bottom: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  -webkit-box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
-          box-shadow: 5px 5px 10px -8px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
+          box-shadow: 2px 2px 10px -6px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=styles.css.map */
