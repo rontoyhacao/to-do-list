@@ -22,13 +22,11 @@
             <div class="input-container">
                 <div class="input-container__upper">
                     <!-- <button class="completed-btn">Completed Tasks</button> -->
-                    <div class="select-container">
-                        <select name="" id="">
-                            <option value="all">All</option>
-                            <option value="completed">Completed</option>
-                            <option value="pending">Pending</option>
-                        </select>
-                    </div>
+                    <select name="filter" class="task-filter">
+                        <option value="all">All Tasks</option>
+                        <option value="completed">Completed Tasks</option>
+                        <option value="pending">Pending Tasks</option>
+                    </select>
                 </div>
                 <form class="input-container__lower">
                     <input class="task-input" type="text" name="" id="" placeholder="Write a new task">
@@ -36,16 +34,7 @@
                 </form>
             </div>
             <div class="main-container">
-                <ul class="task-list">
-                    <!-- <li>
-                        <label class="container">
-                            <input type="checkbox" name="">
-                            <span class="checkmark"></span>
-                            do the chores
-                        </label>
-                        <button class="delete-btn"><i class="fas fa-times"></i></button>
-                    </li> -->
-                </ul>
+                <ul class="task-list"></ul>
             </div>
         </main>
         

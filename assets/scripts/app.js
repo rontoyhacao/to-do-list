@@ -1,10 +1,12 @@
 const taskInput = document.querySelector('.task-input');
 const taskButton = document.querySelector('.task-button');
 const taskList = document.querySelector('.task-list');
+const taskDropdown = document.querySelector('.task-filter');
 
 // event listeners
 taskButton.addEventListener('click', addTask);
 taskList.addEventListener('click', deleteCheck);
+taskDropdown.addEventListener('click', filterTask);
 
 function addTask(e) {
     e.preventDefault();
@@ -39,7 +41,6 @@ function addTask(e) {
 }
 
 function deleteCheck(e) {
-    console.log(e.target);
     const taskItem = e.target;
 
     // delete task
@@ -58,4 +59,30 @@ function deleteCheck(e) {
         const task2 = task.parentElement;
         task2.classList.toggle('completed');
     }
+}
+
+function filterTask(e) {
+    const tasks = taskList.childNodes;
+    console.log(tasks);
+    tasks.forEach(function(todo) {
+        switch(e.target.value) {
+            case 'all':
+                todo.style.display = 'flex';
+                break;
+            case 'completed':
+                if (todo.classList.contains('completed')) {
+                    todo.style.display = 'flex';
+                } else {
+                    todo.style.display = 'none';
+                }
+                break;
+            case 'pending':
+                if (!todo.classList.contains('completed')) {
+                    todo.style.display = 'flex';
+                } else {
+                    todo.style.display = 'none';
+                }
+                break;
+        }
+    });
 }
