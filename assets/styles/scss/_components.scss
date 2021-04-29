@@ -93,3 +93,31 @@ ul li {
     transform: translateX(-100%);
     opacity: 0;
 }
+
+.select-container {
+    position: relative;
+    &::after {
+        content: url(/assets/images/caret-down-solid.svg);
+        transform: rotate(-180deg);
+        position: absolute;
+        top: .15rem;
+        right: .2rem;
+        height: 1rem;
+        width: 1rem;
+        background: $base;
+        padding: 1rem;
+        border-radius: 50%;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+    }
+    select {
+        border: none;
+        padding: 1rem;
+        border-radius: 2rem;
+        width: 100%;
+        margin-bottom: 1rem;
+        appearance: none;
+        cursor: pointer;
+    }
+}
