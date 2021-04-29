@@ -51,6 +51,7 @@ function deleteCheck(e) {
         task.addEventListener('transitionend', function() {
             task.remove();
         });
+        filterTask();
     }
 
     // mark a task as complete
@@ -58,6 +59,7 @@ function deleteCheck(e) {
         const task = taskItem.parentElement;
         const task2 = task.parentElement;
         task2.classList.toggle('completed');
+        filterTask();
     }
 }
 
@@ -65,7 +67,7 @@ function filterTask(e) {
     const tasks = taskList.childNodes;
     console.log(tasks);
     tasks.forEach(function(todo) {
-        switch(e.target.value) {
+        switch(taskDropdown.value) {
             case 'all':
                 todo.style.display = 'flex';
                 break;
